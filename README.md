@@ -10,6 +10,8 @@ Then you run terraformer on that like this: `terraformer import plan newplan.jso
 
 After the import it's also necessary to change the provider name in the state file because it
 contains the Terraform pre-0.13 variant.
+See https://stackoverflow.com/questions/65396812/invalid-legacy-provider-address-error-on-terraform
+(need to change registry.terraform.io/-/aws to hashicorp/aws)
 
 
 To separate multiple zones to own files:
